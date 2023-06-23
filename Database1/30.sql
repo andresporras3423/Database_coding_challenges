@@ -1,0 +1,22 @@
+﻿----David Christ loves The World. He takes care Of it every day. Every yearthe world's population is 10% more than the previous year.
+----Output the world population after n years.
+----Input
+----Line 1: c, the beginning world population
+----Line 2: n, the number of years passed.
+----Output
+----r, the resulting population rounded down.
+----Constraints
+----<=c<=200
+----1<=n<=50
+----Example
+----Input
+----10
+----3
+----Output
+----13
+--create table world_population(
+--total int,
+--years int
+--);
+--insert into world_population values (10,3),(100,1), (1000,3),(50,2),(4,10);
+select total, years, FLOOR(CONVERT(float,total)*POWER(CONVERT(DECIMAL(10,5),1.1),years)) final_amount from world_population;

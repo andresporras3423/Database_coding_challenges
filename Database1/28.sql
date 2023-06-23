@@ -1,0 +1,21 @@
+﻿----Bob has in his SockBox Multiple pairs of socks with n different colors .
+----the pairs are separated and distributed randomly on the box .
+----Bob can't see the colors of the socks because the room is dark and he's is in a hurry .
+----for a match of football he only need 2 socks with the same color .
+----given the number n of the different sock colors he have ....output the least amount of socks he should take out from the box so he could have at least 2 socks of the same color .
+----if not possible, output -1
+----Input
+----n the total number of different colors of his all sock pairs in the box .
+----Output
+----the least number of socks he should extract so he could garantee that he have at least 2 socks of the same color .
+----Constraints
+----Example
+----Input
+----2
+----Output
+----3
+--create table socks(
+--pairs int
+--)
+--insert into socks values (3),(2),(0),(1),(32),(23)
+select IIF(pairs=0,-1,pairs+1) from socks

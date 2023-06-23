@@ -1,0 +1,24 @@
+﻿----You must compute the area of trapezoid
+----Input
+----In first line you have a means short base of the trapezoid.
+----In second line you have b means long base of the trapezoid.
+----In third line you have h means height.
+----Output
+----One decimal number, the area of this trapezoid
+----Constraints
+----0<a,b,c
+----Example
+----Input
+----1
+----2
+----3
+----Output
+----4.5
+--drop table trapezoid;
+--create table trapezoid(
+--short_width float,
+--long_width float,
+--height float
+--);
+--insert into trapezoid values (2.5,2,2.5), (1,2,3),(3,3,3),(1,2,0),(0,0,0),(2,2,2),(1,2,3),(2.5,3,2),(2.5,2.5,2);
+select short_width, long_width, height, CONVERT(decimal(10,1),(short_width+long_width)*height/2) as 'sol' from trapezoid;
