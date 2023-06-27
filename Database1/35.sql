@@ -14,7 +14,6 @@
     --krap
     --Output
     --qyrjbnxhfuyjnnfhrjgkdjgjntjgnd
-
 --create table kraps(
 --str_ varchar(255),
 --krap varchar(255)
