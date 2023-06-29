@@ -1,0 +1,56 @@
+﻿----Display the following symbols With respect To the "Cardinal and Ordinal Directions".
+----    NORTH: 
+----    *
+----    | 
+----    ____________
+----    SOUTH:
+----    |
+----    *
+----    ____________
+----    EAST:
+----    ----*
+----    ____________
+----    WEST:
+----    *----
+----    ____________
+----    NORTHEAST:
+----     *
+----    /
+----    ____________
+----    SOUTHWEST:
+----     /
+----    *
+----    ____________
+----    NORTHWEST:
+----    *
+----     \
+----    ____________
+----    SOUTHEAST:
+----    \
+----     *
+----    Input
+----    A single line consisting of a string(all characters are in uppercase)
+----    Output
+----    Display the symbol With respective To the Direction.
+----    Constraints
+----    Example
+----    Input
+----    NORTH
+----    Output
+----    *
+----    |
+--create table directions(
+--direction varchar(50) primary key,
+--symbol varchar(50) unique
+--);
+--insert into directions VALUES 
+--('NORTH',CONCAT('*',CHAR(13), CHAR(10),'|')),
+--('SOUTH',CONCAT('|',CHAR(13), CHAR(10),'*')),
+--('EAST','----*'),
+--('WEST','*----'),
+--('NORTHEAST',CONCAT(' *',CHAR(13), CHAR(10),'/')),
+--('SOUTHWEST',CONCAT(' /',CHAR(13), CHAR(10),'*')),
+--('NORTHWEST',CONCAT('*',CHAR(13), CHAR(10),' \')),
+--('SOUTHEAST',CONCAT('\',CHAR(13), CHAR(10),' *'));
+
+select * from directions;
