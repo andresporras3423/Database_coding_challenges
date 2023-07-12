@@ -60,3 +60,5 @@ select * from @solutions;
     --select * from log_messages;
     --truncate table log_messages;
     --select * from log_messages;
+
+
